@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hukum Perusahaan & Lembaga Keuangan (Web PPT)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            transition: background-color 0.3s ease;
+        }
+        .slide-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .slide {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            position: absolute; /* Stack slides */
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 5rem;
+        }
+        .slide.active {
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+        }
+        .nav-btn {
+            @apply px-6 py-3 rounded-xl font-bold transition duration-300 ease-in-out shadow-lg hover:shadow-xl;
+        }
+        .header-bg {
+            background-color: #004d40; /* Dark Teal */
+        }
+        .text-primary {
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div id="presentation-app" class="slide-container max-w-4xl mx-auto bg-white shadow-2xl">
+
+        <!-- Fixed Header -->
+        <header class="fixed top-0 left-0 right-0 z-10 w-full max-w-4xl mx-auto header-bg text-white shadow-xl py-3 px-6">
+            <h1 class="text-xl font-extrabold truncate">Hukum Perusahaan & Lembaga Keuangan</h1>
+            <p id="slide-title" class="text-sm font-light italic mt-1"></p>
+        </header>
+
+        <!-- Slides Wrapper -->
+        <main id="slides-wrapper" class="relative flex-grow px-6 pb-20 pt-20">
+            <!-- SLIDE 1: Judul -->
+            <section class="slide active" data-title="Halaman Judul & Referensi">
+                <div class="flex flex-col h-full justify-center text-center">
+                    <h2 class="text-4xl sm:text-6xl font-black text-primary mb-6 animate-pulse">
+                        HUKUM PERUSAHAAN & LEMBAGA KEUANGAN
+                    </h2>
+                    <p class="text-xl sm:text-2xl font-semibold text-gray-700 mb-12">
+                        Mata Kuliah Hukum Komersial
+                    </p>
+                    <div class="p-6 bg-gray-100 rounded-xl shadow-inner mx-auto max-w-md">
+                        <p class="text-lg font-medium text-gray-800">
+                            Disusun Berdasarkan:
+                        </p>
+                        <p class="text-2xl font-extrabold text-primary mt-2">
+                            BUKU HUKUM KOMERSIAL
+                        </p>
+                        <p class="text-base text-gray-600">
+                            Karya: Dr. Rahayu Hartini, S.H., M.Si., M.Hum.
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- SLIDE 2: Pendahuluan: Ruang Lingkup -->
+            <section class="slide" data-title="Ruang Lingkup Hukum Komersial">
+                <div class="mt-4">
+                    <h3 class="text-3xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">
+                        Pendahuluan & Konsep Dasar
+                    </h3>
+                    <p class="text-lg mb-4 text-gray-700">
+                        Hukum Komersial adalah bagian dari Hukum Privat yang mengatur hubungan-hubungan yang timbul dari perbuatan niaga (dagang) dan perusahaan.
+                    </p>
+
+                    <h4 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+                        Fokus Utama (Menurut Dr. Rahayu Hartini):
+                    </h4>
+                    <ul class="list-none space-y-4">
+                        <li class="p-3 bg-teal-50 rounded-lg shadow-sm">
+                            <span class="font-bold text-lg text-primary">1. Hukum Perusahaan:</span> Mengatur bentuk-bentuk badan usaha (Firma, CV, PT, dll.) dan segala aktivitasnya.
+                        </li>
+                        <li class="p-3 bg-teal-50 rounded-lg shadow-sm">
+                            <span class="font-bold text-lg text-primary">2. Hukum Kontrak Komersial:</span> Mengatur perjanjian-perjanjian dagang.
+                        </li>
+                        <li class="p-3 bg-teal-50 rounded-lg shadow-sm">
+                            <span class="font-bold text-lg text-primary">3. Hukum Lembaga Keuangan:</span> Mengatur operasional bank, asuransi, pasar modal, dan lain-lain.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: Hukum Perusahaan (PT) -->
+            <section class="slide" data-title="Perseroan Terbatas (PT)">
+                <div class="mt-4">
+                    <h3 class="text-3xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">
+                        Perseroan Terbatas (PT)
+                    </h3>
+                    <div class="bg-blue-50 p-4 rounded-xl shadow-md mb-6">
+                        <p class="text-xl font-bold text-blue-800">
+                            Definisi Kunci:
+                        </p>
+                        <p class="text-lg mt-2 italic text-gray-700">
+                            PT adalah badan hukum yang didirikan berdasarkan perjanjian, melakukan kegiatan usaha dengan modal dasar yang seluruhnya terbagi dalam saham, dan memenuhi persyaratan yang ditetapkan undang-undang. (UU No. 40 Tahun 2007)
+                        </p>
+                    </div>
+
+                    <h4 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+                        Organ Perseroan (3 Pilar):
+                    </h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start bg-gray-50 p-3 rounded-lg shadow-sm">
+                            <span class="text-2xl mr-3 text-red-500">•</span>
+                            <span class="font-semibold">Rapat Umum Pemegang Saham (RUPS):</span> Memegang kekuasaan tertinggi dalam PT, tidak terbatas pada keputusan Rapat Direksi dan Komisaris.
+                        </li>
+                        <li class="flex items-start bg-gray-50 p-3 rounded-lg shadow-sm">
+                            <span class="text-2xl mr-3 text-red-500">•</span>
+                            <span class="font-semibold">Direksi:</span> Bertanggung jawab atas pengurusan PT, baik di dalam maupun di luar pengadilan.
+                        </li>
+                        <li class="flex items-start bg-gray-50 p-3 rounded-lg shadow-sm">
+                            <span class="text-2xl mr-3 text-red-500">•</span>
+                            <span class="font-semibold">Dewan Komisaris:</span> Bertanggung jawab atas pengawasan secara umum dan/atau khusus serta memberikan nasihat kepada Direksi.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Hukum Perusahaan (Lainnya) -->
+            <section class="slide" data-title="Bentuk-Bentuk Perusahaan Non-Badan Hukum">
+                <div class="mt-4">
+                    <h3 class="text-3xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">
+                        Bentuk Perusahaan Non-Badan Hukum
+                    </h3>
+                    <p class="text-lg mb-4 text-gray-700 font-medium">
+                        Berbeda dengan PT, entitas ini tidak memiliki pemisahan harta kekayaan antara perusahaan dan pemilik secara sempurna, menurut pandangan umum Hukum Komersial.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="p-4 bg-yellow-50 rounded-xl shadow-md border-l-4 border-yellow-600">
+                            <h4 class="text-xl font-bold text-yellow-800">Firma (Fa.)</h4>
+                            <p class="mt-1 text-gray-700">
+                                Persekutuan untuk menjalankan usaha di bawah nama bersama. **Tanggung jawab sekutu bersifat pribadi dan tanggung renteng.**
+                            </p>
+                        </div>
+                        <div class="p-4 bg-red-50 rounded-xl shadow-md border-l-4 border-red-600">
+                            <h4 class="text-xl font-bold text-red-800">Persekutuan Komanditer (CV)</h4>
+                            <p class="mt-1 text-gray-700">
+                                Memiliki dua jenis sekutu: **Sekutu Komplementer** (bertanggung jawab penuh) dan **Sekutu Komanditer** (hanya bertanggung jawab sebatas modal yang disetorkan).
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- SLIDE 5: Lembaga Keuangan (Definisi & Jenis) -->
+            <section class="slide" data-title="Lembaga Keuangan: Definisi dan Jenis">
+                <div class="mt-4">
+                    <h3 class="text-3xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">
+                        Lembaga Keuangan (LK)
+                    </h3>
+                    <div class="bg-green-50 p-4 rounded-xl shadow-md mb-6">
+                        <p class="text-xl font-bold text-green-800">
+                            Fungsi Pokok (Menurut Dr. Rahayu Hartini):
+                        </p>
+                        <p class="text-lg mt-2 italic text-gray-700">
+                            LK berfungsi sebagai perantara (intermediary) antara pihak yang kelebihan dana (surplus unit) dengan pihak yang kekurangan dana (deficit unit).
+                        </p>
+                    </div>
+
+                    <h4 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+                        Klasifikasi Utama LK:
+                    </h4>
+                    <ul class="list-disc ml-6 space-y-3 text-lg text-gray-700">
+                        <li class="font-bold text-primary">Lembaga Keuangan Bank (LKB):</li>
+                        <p class="ml-4 font-normal text-gray-600">Menerima simpanan dari masyarakat (deposito, tabungan) dan menciptakan uang giral (Bank Umum, BPR).</p>
+                        <li class="font-bold text-primary">Lembaga Keuangan Non-Bank (LKNB):</li>
+                        <p class="ml-4 font-normal text-gray-600">Tidak berhak menerima simpanan (hanya menghimpun dana) secara langsung dari masyarakat dalam bentuk giro, tabungan, atau deposito (Asuransi, Dana Pensiun, Pasar Modal, Pegadaian).</p>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: Perbedaan Pendapat & Kritik -->
+            <section class="slide" data-title="Perbedaan Pendapat & Kritik dalam Hukum Komersial">
+                <div class="mt-4">
+                    <h3 class="text-3xl font-bold text-primary mb-6 border-b-2 border-red-500 pb-2">
+                        Kritik & Perbedaan Pendapat
+                    </h3>
+                    <div class="bg-red-50 p-4 rounded-xl shadow-md border-l-4 border-red-600 mb-6">
+                        <p class="text-xl font-bold text-red-800">
+                            Isu: Batas Tanggung Jawab CV vs. PT
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-inner">
+                            <h4 class="text-xl font-bold text-primary">Pandangan Dr. Rahayu Hartini (Hukum Komersial):</h4>
+                            <p class="text-gray-700 mt-2">
+                                Penekanan kuat pada perbedaan fundamental: **PT adalah Badan Hukum** yang memisahkan harta kekayaan secara sempurna, sementara **CV bukan Badan Hukum**, sehingga Sekutu Komplementer tetap bertanggung jawab penuh dan pribadi.
+                            </p>
+                        </div>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg shadow-inner border-l-4 border-yellow-600">
+                            <h4 class="text-xl font-bold text-yellow-800">Perbedaan/Kritik dari Sumber Lain:</h4>
+                            <p class="text-gray-700 mt-2 font-semibold italic">
+                                Sumber: Prof. Dr. Sutan Remy Sjahdeini, S.H. (Buku: Hukum Perseroan Terbatas & Hukum Kepailitan Modern)
+                            </p>
+                            <p class="text-gray-700 mt-2">
+                                Kritik modern terhadap CV sering menyebutkan bahwa, secara praktik, pemisahan tanggung jawab Sekutu Komanditer (pasif) cenderung mendekati pemegang saham PT (sebatas modal). Namun, perbedaan kuncinya tetap pada **status badan hukum** dan **peraturan perundang-undangan** yang mengikat. Dalam kasus *piercing the corporate veil* (mengabaikan selubung badan hukum) pada PT, harta pribadi direksi/pemegang saham dapat dikejar, namun hal ini adalah pengecualian. Sementara pada CV, tanggung jawab penuh sekutu komplementer adalah aturan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Fixed Footer & Navigation -->
+        <footer class="fixed bottom-0 left-0 right-0 z-10 w-full max-w-4xl mx-auto bg-gray-900 py-3 px-6 shadow-2xl">
+            <div class="flex justify-between items-center">
+                <button id="prev-btn" class="nav-btn bg-teal-600 text-white opacity-50 cursor-not-allowed" disabled>
+                    &larr; Sebelumnya
+                </button>
+                <span id="slide-number" class="text-white text-lg font-bold">1 / 6</span>
+                <button id="next-btn" class="nav-btn bg-teal-600 hover:bg-teal-700 text-white">
+                    Selanjutnya &rarr;
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const slideNumberSpan = document.getElementById('slide-number');
+        const slideTitleHeader = document.getElementById('slide-title');
+        let currentSlide = 0;
+
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                slide.style.display = 'none'; // Hide physically
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                    slide.style.display = 'block'; // Show physically
+                    slideTitleHeader.textContent = slide.getAttribute('data-title');
+                }
+            });
+
+            // Update Navigation and Status
+            prevBtn.disabled = currentSlide === 0;
+            prevBtn.classList.toggle('opacity-50', currentSlide === 0);
+            prevBtn.classList.toggle('cursor-not-allowed', currentSlide === 0);
+
+            nextBtn.disabled = currentSlide === slides.length - 1;
+            nextBtn.classList.toggle('opacity-50', currentSlide === slides.length - 1);
+            nextBtn.classList.toggle('cursor-not-allowed', currentSlide === slides.length - 1);
+
+            slideNumberSpan.textContent = `${currentSlide + 1} / ${slides.length}`;
+        }
+
+        function goToNextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function goToPrevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        prevBtn.addEventListener('click', goToPrevSlide);
+        nextBtn.addEventListener('click', goToNextSlide);
+
+        // Initial setup
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure all slides except the first one are initially hidden
+            slides.forEach((slide, index) => {
+                if (index !== 0) {
+                    slide.style.display = 'none';
+                }
+            });
+            updateSlide();
+        });
+
+        // Add keyboard navigation for desktop users
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                goToNextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                goToPrevSlide();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
